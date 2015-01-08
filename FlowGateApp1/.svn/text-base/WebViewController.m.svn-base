@@ -1,0 +1,197 @@
+//
+//  WebViewController.m
+//  FlowGateApp1
+//
+//  Created by tianb on 5/5/14.
+//  Copyright (c) 2014 21cn. All rights reserved.
+//
+
+#import "WebViewController.h"
+#import "AppDelegate.h"
+#import "FGAgent.h"
+#import "MyUrlProtocol.h"
+
+@interface WebViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *webview;
+@property (weak, nonatomic) IBOutlet UITextField *url;
+@property (strong, nonatomic) NSURLSession *session;
+
+@property(nonatomic,strong)NSString *defaultUA;
+
+@end
+
+@implementation WebViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+    self.url.text = @"http://news.21cn.com/hot/cn/cb/2014/1112/07/28540806.shtml";
+    self.webview.scalesPageToFit = YES;
+    
+    self.defaultUA = [self getDefaultUserAgent];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [NSURLProtocol registerClass:[MyUrlProtocol class]];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [NSURLProtocol unregisterClass:[MyUrlProtocol class]];
+}
+
+-(void)alert:(NSString *)msg
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+- (NSString *)getDefaultUserAgent
+{
+    NSString *userAgent = [[[UIWebView alloc] init] stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    NSLog(@"=============default User-Agent:%@",userAgent);
+    return userAgent;
+}
+
+-(void)setUserAgent:(NSMutableURLRequest *)request
+{
+    if ([FGAgent currValidAgentResult]) {
+        //zhpticg(token/key/timestamp/version)
+        NSString *token = [FGAgent currValidAgentResult].token;
+        NSString *key = [FGAgent currValidAgentResult].key;
+        NSString *timeStamp = [FGAgent currValidAgentResult].timeStamp;
+        NSString *version = @"1.6";
+        NSMutableString *userAgent = [NSMutableString stringWithFormat:@"%@ zhpticg(%@/%@/%@/%@)",self.defaultUA,token,key,timeStamp,version];
+        [request addValue:userAgent forHTTPHeaderField:@"User-Agent"];
+    }
+    
+}
+
+//这种方式无法应用到网页的内部连接
+//-(IBAction)loadWebView:(id)sender
+//{
+//    self.webview.delegate = self;
+//    
+//    if (self.url.text == nil || [self.url.text isEqualToString:@""]) {
+//        [self alert:@"请输入url"];
+//        return;
+//    }
+//    
+//    NSURL *url = [NSURL URLWithString:self.url.text];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    
+//    
+////    if(YES){
+////        [self.webview loadRequest:request];
+////        return;
+////    }
+//
+//    NSMutableURLRequest *mreq = [request mutableCopy];
+//    NSString *ts = [FGAgent currValidAgentResult].timeStamp;
+//    NSString *ks = [FGAgent currValidAgentResult].key;
+//    NSString *tk = [FGAgent currValidAgentResult].token;
+//    NSString *domain = [FGAgent currValidAgentResult].domain;
+//    NSInteger port = [FGAgent currValidAgentResult].port;
+//    if (ks) {
+//        [mreq addValue:ks forHTTPHeaderField:@"ks"];
+//    }
+//    if (tk) {
+//        [mreq addValue:tk forHTTPHeaderField:@"tk"];
+//    }
+//    if (ts) {
+//        [mreq addValue:ts forHTTPHeaderField:@"ts"];
+//    }
+//    
+//    [self setUserAgent:mreq];
+//
+//    
+//    NSLog(@"ks = %@, tk = %@, ts = %@",ks,tk,ts);
+//    NSLog(@"domain = %@, port = %ld",domain,(long)port);
+//
+//    
+//    request = [mreq copy];
+//    
+//    if(domain) {
+//        NSDictionary *proxy = @{(NSString*)kCFStreamPropertyHTTPProxyHost: domain,
+//                                (NSString*)kCFStreamPropertyHTTPProxyPort: @(port)};
+//        NSURLSessionConfiguration *conf = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+//        conf.connectionProxyDictionary = proxy;
+//        self.session = [NSURLSession sessionWithConfiguration:conf];
+//    } else {
+//        self.session = [NSURLSession sharedSession];
+//    }
+//    
+//    
+//    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//        
+//        
+//        //NSLog(@"NSURLSessionDataTask = %@",data);
+//        
+//        [self.webview loadData:data MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:nil];
+//    }];
+//    
+//    
+//    [dataTask resume];
+//    
+//}
+
+
+-(IBAction)loadWebView:(id)sender
+{
+    self.webview.delegate = self;
+    
+    if (self.url.text == nil || [self.url.text isEqualToString:@""]) {
+        [self alert:@"请输入url"];
+        return;
+    }
+    
+    NSURL *url = [NSURL URLWithString:self.url.text];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [self.webview loadRequest:request];
+}
+
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSLog(@"=========shouldStartLoadWithRequest:%@",request.URL);
+    return YES;
+}
+
+//开始加载Web页面的时候
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];//设置进度条开始
+    NSLog(@"Loading webViewDidStartLoad method");
+}
+
+//加载结束的时候
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];//设置进度条结束
+    NSLog(@"Loading webViewDidFinishLoad method");
+}
+
+//加载失败的时候，如：网络异常
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    NSLog(@"Loading webView didFailLoadWithError:%@",error);
+}
+
+@end

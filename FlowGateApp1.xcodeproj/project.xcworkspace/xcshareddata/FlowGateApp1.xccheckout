@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F82D5500-1AF9-45B0-8A35-61ED103EB8CB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FlowGateApp1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F9C87543-EC04-4F94-A64D-004E265C45A4</key>
+		<string>svn://10.10.9.211/TechDvpt_Dept/projects/UnifiedSuite/trunk/nettraffic/IOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FlowGateApp1.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F9C87543-EC04-4F94-A64D-004E265C45A4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>F9C87543-EC04-4F94-A64D-004E265C45A4</key>
+		<string>svn://10.10.9.211/TechDvpt_Dept</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://10.10.9.211/TechDvpt_Dept/projects/UnifiedSuite/trunk/nettraffic/IOS/FlowGateApp1/FlowGateApp1.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F9C87543-EC04-4F94-A64D-004E265C45A4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>projects/UnifiedSuite/trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9C87543-EC04-4F94-A64D-004E265C45A4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

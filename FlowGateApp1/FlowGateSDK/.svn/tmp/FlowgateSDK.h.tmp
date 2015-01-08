@@ -1,0 +1,75 @@
+//
+//  FlowgateSDK.h
+//  FlowgateSDK
+//
+//  Created by 赵瑜瑜 on 14-8-4.
+//  Copyright (c) 2014年 21CN Corporation Limited. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+extern NSString *const FGHttpHeaderFiledPropertyTK;
+extern NSString *const FGHttpHeaderFiledPropertyKS;
+extern NSString *const FGHttpHeaderFiledPropertyTS;
+extern NSString *const FGHttpHeaderFiledPropertyDomain;
+extern NSString *const FGHttpHeaderFiledPropertyPort;
+
+typedef void (^ParseBlock)(NSDictionary *dictionary, NSError *error);
+
+@interface FlowgateSDK : NSObject
+//SDK是否连接服务端的测试环境,缺省NO
+@property(nonatomic,assign,getter=isInDevEnv)BOOL inDevEnv;
+/**
+ * 获取代理网关地址信息
+ * @param clientId 第三方appId
+ * @param mobile   用户手机号码
+ * @param appSign  客户端签名信息(安卓应用的指纹密钥)
+ */
+-(void)getAgentInfo:(NSString *)clientId mobile:(NSString*)mobile appSign:(NSString*)appSign block:(ParseBlock) block;
+
+/**
+ * 流量套件SDKS通过调用该接口来请求网关服务模块下发短信验证码到用户手机。
+ * 接口URL：http://server.flowgate.e.189.cn/sdk/server/sendCaptcha.do。
+ * @param clientId 第三方appId
+ * @param mobile   用户手机号码
+ */
+-(void)sendCaptcha:(NSString *)clientId mobile:(NSString*)mobile appSign:(NSString*)appSign block:(ParseBlock)block;
+
+/**
+ * 流量套件SDKS通过调用该接口来请求网关服务模块校验短信验证码。
+ * 接口URL：http://server.flowgate.e.189.cn/sdk/server/checkCaptcha.do。
+ * @param clientId 第三方appId
+ * @param mobile   用户手机号码
+ * @param captcha  用户输入的短信验证码
+ */
+-(void)checkCaptcha:(NSString *)clientId mobile:(NSString*)mobile captcha:(NSString*)captcha appSign:(NSString*)appSign block:(ParseBlock)block;
+
+/**
+<<<<<<< .mine
+ * 流量套件SDK向服务平台调用http://flowgate.e.189.cn/sdk/server/expireToken.do将redis的token key失效。
+=======
+ * 流量套件SDK向服务平台调用将redis的token key失效。
+>>>>>>> .r21489
+ * 当用户终端的网络从运营商移动网络（3g、4g等）转换为wif时调用这个接口。
+ * @param clientId 第三方appId
+ * @param mobile   用户手机号码
+ * @param token    要失效的token
+ * @param appSign  客户端签名信息(安卓应用的指纹密钥)
+ */
+-(void)expireToken:(NSString *)clientId mobile:(NSString*)mobile token:(NSString*)token appSign:(NSString*)appSign block:(ParseBlock) block;
+
+<<<<<<< .mine
+
+=======
+/**
+ *  查询流量使用情况
+ *
+ *  @param clientId 第三方appId
+ *  @param mobile   用户手机号码
+ *  @param token    要失效的token
+ *  @param block    回调函数
+ */
+-(void)getOrdersInfo:(NSString *)clientId mobile:(NSString*)mobile appSign:(NSString*)appSign block:(ParseBlock) block;
+
+>>>>>>> .r21489
+@end

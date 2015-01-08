@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8443571B1915E52E00742E5A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1A48F1915DDBF00F4E820 /* CFNetwork.framework */; };
+		8443571D1915E53500742E5A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8443571C1915E53500742E5A /* Security.framework */; };
+		8443571F1915E56100742E5A /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8443571E1915E56100742E5A /* libxml2.2.dylib */; };
+		844357271915E5E500742E5A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 844357261915E5E500742E5A /* libz.dylib */; };
+		844357291915E5FF00742E5A /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 844357281915E5FF00742E5A /* libiconv.2.4.0.dylib */; };
+		84A9EC1D1910E912005A830E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A9EC1C1910E912005A830E /* Foundation.framework */; };
+		84A9EC1F1910E912005A830E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A9EC1E1910E912005A830E /* CoreGraphics.framework */; };
+		84A9EC211910E912005A830E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A9EC201910E912005A830E /* UIKit.framework */; };
+		84A9EC271910E912005A830E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A9EC251910E912005A830E /* InfoPlist.strings */; };
+		84A9EC291910E912005A830E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A9EC281910E912005A830E /* main.m */; };
+		84A9EC2D1910E912005A830E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A9EC2C1910E912005A830E /* AppDelegate.m */; };
+		84A9EC301910E912005A830E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A9EC2E1910E912005A830E /* Main.storyboard */; };
+		84A9EC351910E912005A830E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A9EC341910E912005A830E /* Images.xcassets */; };
+		84ABB987191777ED0082D0E5 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABB986191777ED0082D0E5 /* WebViewController.m */; };
+		84C1A4931915DEA100F4E820 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1A4921915DEA100F4E820 /* SystemConfiguration.framework */; };
+		A3152C941A01ED2C00B68E45 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3152C921A01ED2C00B68E45 /* DownloadViewController.m */; };
+		A3152C951A01ED2C00B68E45 /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3152C931A01ED2C00B68E45 /* DownloadViewController.xib */; };
+		A369D2B519FF7377009E15A0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A369D2B319FF7377009E15A0 /* MainViewController.m */; };
+		A369D2B619FF7377009E15A0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A369D2B419FF7377009E15A0 /* MainViewController.xib */; };
+		A38C6AC01A11F5FD001930AA /* MyUrlProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C6ABF1A11F5FD001930AA /* MyUrlProtocol.m */; };
+		A3CBB6AF1A0376070071D317 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CBB6AE1A0376070071D317 /* WebViewController.xib */; };
+		F1AC61B819D1002200FD645C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC61B619D1002200FD645C /* TestViewController.m */; };
+		F1AC61B919D1002200FD645C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1AC61B719D1002200FD645C /* TestViewController.xib */; };
+		F1E0BEDE198A191E004A5C2C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0BEDD198A191E004A5C2C /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3696C851A0C7623007702E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3696C801A0C7623007702E6 /* FlowgateSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F190B84A198F13B7005F964B;
+			remoteInfo = FlowgateSDK;
+		};
+		A3696C871A0C7623007702E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3696C801A0C7623007702E6 /* FlowgateSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A335E14A1A0B690200057599;
+			remoteInfo = FlowgateSDKTests;
+		};
+		A37D66A21A12F6C0005A204E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3696C801A0C7623007702E6 /* FlowgateSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F190B849198F13B7005F964B;
+			remoteInfo = FlowgateSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8443571C1915E53500742E5A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8443571E1915E56100742E5A /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		844357261915E5E500742E5A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		844357281915E5FF00742E5A /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
+		84A9EC191910E912005A830E /* FlowGateApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowGateApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A9EC1C1910E912005A830E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84A9EC1E1910E912005A830E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84A9EC201910E912005A830E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84A9EC241910E912005A830E /* FlowGateApp1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlowGateApp1-Info.plist"; sourceTree = "<group>"; };
+		84A9EC261910E912005A830E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84A9EC281910E912005A830E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A9EC2A1910E912005A830E /* FlowGateApp1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlowGateApp1-Prefix.pch"; sourceTree = "<group>"; };
+		84A9EC2B1910E912005A830E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84A9EC2C1910E912005A830E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84A9EC2F1910E912005A830E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A9EC311910E912005A830E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84A9EC321910E912005A830E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84A9EC341910E912005A830E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84A9EC3B1910E912005A830E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84A9EC431910E912005A830E /* FlowGateApp1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlowGateApp1Tests-Info.plist"; sourceTree = "<group>"; };
+		84A9EC451910E912005A830E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84A9EC471910E912005A830E /* FlowGateApp1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowGateApp1Tests.m; sourceTree = "<group>"; };
+		84ABB985191777ED0082D0E5 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		84ABB986191777ED0082D0E5 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		84C1A48F1915DDBF00F4E820 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84C1A4921915DEA100F4E820 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A3152C911A01ED2C00B68E45 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		A3152C921A01ED2C00B68E45 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		A3152C931A01ED2C00B68E45 /* DownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
+		A3696C801A0C7623007702E6 /* FlowgateSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlowgateSDK.xcodeproj; path = ../../../FlowgateSDK/FlowgateSDK.xcodeproj; sourceTree = "<group>"; };
+		A369D2B219FF7377009E15A0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A369D2B319FF7377009E15A0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A369D2B419FF7377009E15A0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A38C6ABE1A11F5FD001930AA /* MyUrlProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUrlProtocol.h; sourceTree = "<group>"; };
+		A38C6ABF1A11F5FD001930AA /* MyUrlProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUrlProtocol.m; sourceTree = "<group>"; };
+		A3CBB6AE1A0376070071D317 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		F1AC61B519D1002200FD645C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F1AC61B619D1002200FD645C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		F1AC61B719D1002200FD645C /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		F1E0BEDC198A191E004A5C2C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F1E0BEDD198A191E004A5C2C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A9EC161910E912005A830E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844357291915E5FF00742E5A /* libiconv.2.4.0.dylib in Frameworks */,
+				844357271915E5E500742E5A /* libz.dylib in Frameworks */,
+				8443571F1915E56100742E5A /* libxml2.2.dylib in Frameworks */,
+				84A9EC1F1910E912005A830E /* CoreGraphics.framework in Frameworks */,
+				8443571D1915E53500742E5A /* Security.framework in Frameworks */,
+				8443571B1915E52E00742E5A /* CFNetwork.framework in Frameworks */,
+				84C1A4931915DEA100F4E820 /* SystemConfiguration.framework in Frameworks */,
+				84A9EC211910E912005A830E /* UIKit.framework in Frameworks */,
+				84A9EC1D1910E912005A830E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A9EC101910E912005A830E = {
+			isa = PBXGroup;
+			children = (
+				84A9EC221910E912005A830E /* FlowGateApp1 */,
+				84A9EC411910E912005A830E /* FlowGateApp1Tests */,
+				84A9EC1B1910E912005A830E /* Frameworks */,
+				84A9EC1A1910E912005A830E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A9EC1A1910E912005A830E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A9EC191910E912005A830E /* FlowGateApp1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A9EC1B1910E912005A830E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844357281915E5FF00742E5A /* libiconv.2.4.0.dylib */,
+				844357261915E5E500742E5A /* libz.dylib */,
+				8443571E1915E56100742E5A /* libxml2.2.dylib */,
+				8443571C1915E53500742E5A /* Security.framework */,
+				84C1A4921915DEA100F4E820 /* SystemConfiguration.framework */,
+				84C1A48F1915DDBF00F4E820 /* CFNetwork.framework */,
+				84A9EC1C1910E912005A830E /* Foundation.framework */,
+				84A9EC1E1910E912005A830E /* CoreGraphics.framework */,
+				84A9EC201910E912005A830E /* UIKit.framework */,
+				84A9EC3B1910E912005A830E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84A9EC221910E912005A830E /* FlowGateApp1 */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0BEF6198A26B5004A5C2C /* FlowgateSDK */,
+				F1E0BEDC198A191E004A5C2C /* Reachability.h */,
+				F1E0BEDD198A191E004A5C2C /* Reachability.m */,
+				84A9EC2B1910E912005A830E /* AppDelegate.h */,
+				84A9EC2C1910E912005A830E /* AppDelegate.m */,
+				84A9EC311910E912005A830E /* ViewController.h */,
+				84A9EC321910E912005A830E /* ViewController.m */,
+				84ABB985191777ED0082D0E5 /* WebViewController.h */,
+				84ABB986191777ED0082D0E5 /* WebViewController.m */,
+				A3CBB6AE1A0376070071D317 /* WebViewController.xib */,
+				F1AC61B519D1002200FD645C /* TestViewController.h */,
+				F1AC61B619D1002200FD645C /* TestViewController.m */,
+				F1AC61B719D1002200FD645C /* TestViewController.xib */,
+				84A9EC2E1910E912005A830E /* Main.storyboard */,
+				84A9EC341910E912005A830E /* Images.xcassets */,
+				84A9EC231910E912005A830E /* Supporting Files */,
+				A369D2B219FF7377009E15A0 /* MainViewController.h */,
+				A369D2B319FF7377009E15A0 /* MainViewController.m */,
+				A369D2B419FF7377009E15A0 /* MainViewController.xib */,
+				A3152C911A01ED2C00B68E45 /* DownloadViewController.h */,
+				A3152C921A01ED2C00B68E45 /* DownloadViewController.m */,
+				A3152C931A01ED2C00B68E45 /* DownloadViewController.xib */,
+				A38C6ABE1A11F5FD001930AA /* MyUrlProtocol.h */,
+				A38C6ABF1A11F5FD001930AA /* MyUrlProtocol.m */,
+			);
+			path = FlowGateApp1;
+			sourceTree = "<group>";
+		};
+		84A9EC231910E912005A830E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A9EC241910E912005A830E /* FlowGateApp1-Info.plist */,
+				84A9EC251910E912005A830E /* InfoPlist.strings */,
+				84A9EC281910E912005A830E /* main.m */,
+				84A9EC2A1910E912005A830E /* FlowGateApp1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A9EC411910E912005A830E /* FlowGateApp1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				84A9EC471910E912005A830E /* FlowGateApp1Tests.m */,
+				84A9EC421910E912005A830E /* Supporting Files */,
+			);
+			path = FlowGateApp1Tests;
+			sourceTree = "<group>";
+		};
+		84A9EC421910E912005A830E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A9EC431910E912005A830E /* FlowGateApp1Tests-Info.plist */,
+				84A9EC441910E912005A830E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3696C811A0C7623007702E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3696C861A0C7623007702E6 /* libFlowgateSDK.a */,
+				A3696C881A0C7623007702E6 /* FlowgateSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E0BEF6198A26B5004A5C2C /* FlowgateSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A3696C801A0C7623007702E6 /* FlowgateSDK.xcodeproj */,
+			);
+			name = FlowgateSDK;
+			path = FlowGateSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A9EC181910E912005A830E /* FlowGateApp1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A9EC4B1910E912005A830E /* Build configuration list for PBXNativeTarget "FlowGateApp1" */;
+			buildPhases = (
+				84A9EC151910E912005A830E /* Sources */,
+				84A9EC171910E912005A830E /* Resources */,
+				84A9EC161910E912005A830E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A37D66A31A12F6C0005A204E /* PBXTargetDependency */,
+			);
+			name = FlowGateApp1;
+			productName = FlowGateApp1;
+			productReference = 84A9EC191910E912005A830E /* FlowGateApp1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A9EC111910E912005A830E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = 21cn;
+				TargetAttributes = {
+					84A9EC181910E912005A830E = {
+						DevelopmentTeam = Z429JQWA8Q;
+					};
+				};
+			};
+			buildConfigurationList = 84A9EC141910E912005A830E /* Build configuration list for PBXProject "FlowGateApp1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A9EC101910E912005A830E;
+			productRefGroup = 84A9EC1A1910E912005A830E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A3696C811A0C7623007702E6 /* Products */;
+					ProjectRef = A3696C801A0C7623007702E6 /* FlowgateSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				84A9EC181910E912005A830E /* FlowGateApp1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A3696C861A0C7623007702E6 /* libFlowgateSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFlowgateSDK.a;
+			remoteRef = A3696C851A0C7623007702E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3696C881A0C7623007702E6 /* FlowgateSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FlowgateSDKTests.xctest;
+			remoteRef = A3696C871A0C7623007702E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A9EC171910E912005A830E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A9EC351910E912005A830E /* Images.xcassets in Resources */,
+				84A9EC271910E912005A830E /* InfoPlist.strings in Resources */,
+				A3152C951A01ED2C00B68E45 /* DownloadViewController.xib in Resources */,
+				A3CBB6AF1A0376070071D317 /* WebViewController.xib in Resources */,
+				A369D2B619FF7377009E15A0 /* MainViewController.xib in Resources */,
+				F1AC61B919D1002200FD645C /* TestViewController.xib in Resources */,
+				84A9EC301910E912005A830E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A9EC151910E912005A830E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A9EC2D1910E912005A830E /* AppDelegate.m in Sources */,
+				F1AC61B819D1002200FD645C /* TestViewController.m in Sources */,
+				A3152C941A01ED2C00B68E45 /* DownloadViewController.m in Sources */,
+				A369D2B519FF7377009E15A0 /* MainViewController.m in Sources */,
+				84A9EC291910E912005A830E /* main.m in Sources */,
+				A38C6AC01A11F5FD001930AA /* MyUrlProtocol.m in Sources */,
+				F1E0BEDE198A191E004A5C2C /* Reachability.m in Sources */,
+				84ABB987191777ED0082D0E5 /* WebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A37D66A31A12F6C0005A204E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlowgateSDK;
+			targetProxy = A37D66A21A12F6C0005A204E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A9EC251910E912005A830E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A9EC261910E912005A830E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84A9EC2E1910E912005A830E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A9EC2F1910E912005A830E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A9EC441910E912005A830E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A9EC451910E912005A830E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A9EC491910E912005A830E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		84A9EC4A1910E912005A830E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+		84A9EC4C1910E912005A830E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlowGateApp1/FlowGateApp1-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"../FlowgateSDK/**",
+				);
+				INFOPLIST_FILE = "FlowGateApp1/FlowGateApp1-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FlowGateApp1/FlowGateSDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"../FlowgateSDK/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libFlowgateSDK.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84A9EC4D1910E912005A830E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlowGateApp1/FlowGateApp1-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"../FlowgateSDK/**",
+				);
+				INFOPLIST_FILE = "FlowGateApp1/FlowGateApp1-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FlowGateApp1/FlowGateSDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"../FlowgateSDK/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libFlowgateSDK.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A9EC141910E912005A830E /* Build configuration list for PBXProject "FlowGateApp1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A9EC491910E912005A830E /* Debug */,
+				84A9EC4A1910E912005A830E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A9EC4B1910E912005A830E /* Build configuration list for PBXNativeTarget "FlowGateApp1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A9EC4C1910E912005A830E /* Debug */,
+				84A9EC4D1910E912005A830E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A9EC111910E912005A830E /* Project object */;
+}

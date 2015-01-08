@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController">
+            <connections>
+                <outlet property="url" destination="O04-Tf-Rn4" id="MaN-3Y-h8I"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rlB-Je-TRJ"/>
+                <outlet property="webview" destination="dYk-2g-GXr" id="iHt-qq-rZh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入URL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O04-Tf-Rn4">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHH-lu-wfk">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="bYq-qn-Lky"/>
+                    </constraints>
+                    <state key="normal" title="加载">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bYq-qn-Lky"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="bYq-qn-Lky"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="loadWebView:" destination="-1" eventType="touchUpInside" id="V8b-9W-wbP"/>
+                    </connections>
+                </button>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYk-2g-GXr">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dYk-2g-GXr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="3Kl-Cb-2Bx"/>
+                <constraint firstItem="bHH-lu-wfk" firstAttribute="leading" secondItem="O04-Tf-Rn4" secondAttribute="trailing" constant="8" id="A3S-06-zKZ"/>
+                <constraint firstItem="O04-Tf-Rn4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Dpe-fX-i4P"/>
+                <constraint firstAttribute="trailing" secondItem="dYk-2g-GXr" secondAttribute="trailing" constant="8" id="LGU-hh-mDp"/>
+                <constraint firstAttribute="bottom" secondItem="dYk-2g-GXr" secondAttribute="bottom" constant="8" id="NHn-0t-O6g"/>
+                <constraint firstItem="bHH-lu-wfk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="Xul-5M-6Vr"/>
+                <constraint firstAttribute="trailing" secondItem="bHH-lu-wfk" secondAttribute="trailing" constant="8" id="gLB-jV-6SM"/>
+                <constraint firstItem="O04-Tf-Rn4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="i7l-UL-BeH"/>
+                <constraint firstItem="dYk-2g-GXr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="yRc-Tt-3iU"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="O04-Tf-Rn4"/>
+                    <exclude reference="bHH-lu-wfk"/>
+                    <exclude reference="dYk-2g-GXr"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Dpe-fX-i4P"/>
+                    <exclude reference="i7l-UL-BeH"/>
+                    <exclude reference="A3S-06-zKZ"/>
+                    <exclude reference="Xul-5M-6Vr"/>
+                    <exclude reference="gLB-jV-6SM"/>
+                    <exclude reference="3Kl-Cb-2Bx"/>
+                    <exclude reference="LGU-hh-mDp"/>
+                    <exclude reference="NHn-0t-O6g"/>
+                    <exclude reference="yRc-Tt-3iU"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="O04-Tf-Rn4"/>
+                    <include reference="bHH-lu-wfk"/>
+                    <include reference="dYk-2g-GXr"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Dpe-fX-i4P"/>
+                    <include reference="i7l-UL-BeH"/>
+                    <include reference="A3S-06-zKZ"/>
+                    <include reference="Xul-5M-6Vr"/>
+                    <include reference="gLB-jV-6SM"/>
+                    <include reference="3Kl-Cb-2Bx"/>
+                    <include reference="LGU-hh-mDp"/>
+                    <include reference="NHn-0t-O6g"/>
+                    <include reference="yRc-Tt-3iU"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
